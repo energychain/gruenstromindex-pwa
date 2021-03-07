@@ -13,65 +13,29 @@
     <meta name="twitter:title" content="Stromkonto">
     <meta name="description" content="Prognose der regionalen Ökostromherkunft für die kommenden Stunden">
     <meta name="twitter:image" content="https://gsi.corrently.de/assets/img/Logos/GSI/Logo GSI_512.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/Logos/Corrently/Favicon_C_16.png">
-    <link rel="icon" type="image/png" sizes="256x96" href="assets/img/Logos/GSI/Logo%20GSI_256.png">
-    <link rel="icon" type="image/png" sizes="512x192" href="assets/img/Logos/GSI/Logo%20GSI_512.png">
-    <link rel="icon" type="image/png" sizes="256x96" href="assets/img/Logos/GSI/Logo%20GSI_256.png">
-    <link rel="icon" type="image/png" sizes="512x192" href="assets/img/Logos/GSI/Logo%20GSI_512.png">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/Logos/Corrently/Favicon_C_16.png">
+    <link rel="icon" type="image/png" sizes="256x96" href="../assets/img/Logos/GSI/Logo%20GSI_256.png">
+    <link rel="icon" type="image/png" sizes="512x192" href="../assets/img/Logos/GSI/Logo%20GSI_512.png">
+    <link rel="icon" type="image/png" sizes="256x96" href="../assets/img/Logos/GSI/Logo%20GSI_256.png">
+    <link rel="icon" type="image/png" sizes="512x192" href="../assets/img/Logos/GSI/Logo%20GSI_512.png">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="../manifest.json">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.min.css">
 <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfRTvKp2wmn6LLn6SYPDqqoV4pCD5Yo7E&callback=initMap&libraries=visualization"></script>
 <script src="https://js.stripe.com/v3/"></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [{
-    "@type": "ListItem",
-    "position": 1,
-    "name": "Regional",
-    "item": "https://corrently.de/vision/regional.html"
-  },{
-    "@type": "ListItem",
-    "position": 2,
-    "name": "GrünstromIndex",
-    "item": "https://corrently.de/gruenstromerlebnis/gruenstromindex.html"
-  },{
-    "@type": "ListItem",
-    "position": 3,
-    "name": "Live Abruf",
-    "item": "https://corrently.de/l/gruenstromindex.html"
-  }]
-}
-</script>
 </head>
 
 <body id="mregister" style="background-color: rgb(9,94,44);box-shadow: 0px 0px var(--dark);">
-    <div class="d-sm-none d-md-none d-lg-block d-xl-block" style="/*min-height: 10%;*/width: 100%;height: 35px;background: #2b834a;"></div>
+    <div style="/*min-height: 10%;*/width: 100%;height: 35px;background: #2b834a;"></div>
     <div class="container" style="background: rgb(9,94,44);">
-        <div class="row" style="margin-right: -20px;margin-left: -20px;margin-bottom: 20px;border: 3px solid rgb(9,94,44);min-height: 60px;box-shadow: 5px 5px var(--dark);">
-            <div class="col" style="background: #fda824;min-width: 250px;min-height: 60px;padding-top: 0px;">
-                <h2 style="color: rgb(255,255,255);padding: 15px;">Grünstrom<br>Index</h2>
-            </div>
-            <div class="col" style="background: #ffffff;border-style: none;border-color: rgb(9,94,44);border-radius: 10;">
-                <h1 style="padding: 30px;font-size: 24px;padding-bottom: 0px;padding-top: 10px;">Regionale Erzeugung erkennen</h1>
-                <p class="text-muted helptxt" style="padding-left: 30px;font-family: Assistant, sans-serif;border-radius: 29px;">In Deutschland gibt es immer genügend Ökostrom, jedoch nicht immer von nebenan. Mit dem&nbsp;<span style="font-family: caviar_dreamsregular;">Corrently</span>&nbsp;GrünstromIndex...</p>
-                <div class="helptxt" style="display:none">
-                    <p style="padding-left: 30px;font-family: Assistant, sans-serif;border-radius: 29px;">In Deutschland gibt es immer genügend Ökostrom, jedoch nicht immer von nebenan. Mit dem&nbsp;<span style="font-family: caviar_dreamsregular;">Corrently</span>&nbsp;GrünstromIndex erhältst Du eine Vorhersage für die kommenden Stunden, wann Dein Strom aus der Region stammt.</p>
-                    <p style="padding-left: 30px;font-family: Assistant, sans-serif;">Vermeide Netzverluste und steigere die regionale Wertschöpfung, indem Du Strom zu Zeiten mit hohen Indexwerten nutzt.&nbsp;</p>
-                </div>
-                <div class="text-center"><i class="fa fa-arrow-circle-o-down text-muted helptxt btn" style="font-size: 18px;"></i><i class="fa fa-arrow-circle-o-up text-muted helptxt btn" style="font-size: 18px; display:none"></i></div>
-            </div>
-        </div>
         <section style="margin-bottom: 25px;background: #ffffff;padding: 15px;">
             <div class="gsinozip" style="display:none">
                 <h3>Prognose abrufen</h3>
@@ -177,15 +141,22 @@
             </div>
         </div>
         <footer>
+            <div class="social"><a class="border rounded-circle" data-bss-hover-animate="pulse" href="https://www.instagram.com/corrently.energy/"><i class="icon ion-social-instagram"></i></a><a data-bss-hover-animate="pulse" href="https://www.facebook.com/stromdaoltd/"><i class="icon ion-social-facebook"></i></a><a data-bss-hover-animate="pulse" href="https://github.com/energychain/"><i class="icon ion-social-github"></i></a><a data-bss-hover-animate="pulse" href="https://twitter.com/corrently"><i class="fa fa-twitter"></i></a><a data-bss-hover-animate="pulse" href="https://www.youtube.com/channel/UCQjaUqLgPaHjs-i4OrrTjHA?view_as=subscriber"><i class="icon ion-social-youtube"></i></a><a data-bss-hover-animate="pulse" href="https://www.linkedin.com/company/18037207/"><i class="icon ion-social-linkedin"></i></a><a data-bss-hover-animate="pulse" href="https://corrently.blog/"><i class="icon ion-social-rss"></i></a></div>
+            <ul class="list-inline" style="font-family: 'DIN Alternate Bold';">
+                <li class="list-inline-item"><a href="../impressum.html">Impressum</a></li>
+                <li class="list-inline-item"><a href="../datenschutz.html">Datenschutz</a></li>
+                <li class="list-inline-item"><a href="https://www.stromkonto.net" style="color: #4b4c4d;">Stromkonto</a></li>
+                <li class="list-inline-item"><a href="https://www.stromdao.de/" style="color: #4b4c4d;">Unternehmen</a></li>
+                <li class="list-inline-item"><a href="#">Nachhaltigkeit</a></li>
+                <li class="list-inline-item"><a href="/post">Blog</a></li>
+            </ul>
             <p class="copyright"><strong>STROM</strong>DAO&nbsp;GmbH © 2021</p>
-        </footer><script src="https://www.dwin1.com/22541.js" type="text/javascript" defer="defer"></script>
+        </footer>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="assets/js/script.min.js"></script>
-    <script src="assets/js/index.min.js"></script>
-    <script src="assets/js/stromkonto.min.js"></script>
+    <script src="../assets/js/script.min.js"></script>
 </body>
 
 </html>
