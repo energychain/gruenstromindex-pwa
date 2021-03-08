@@ -1,7 +1,8 @@
 {
   "short_name":"GrünstromIndex",
   "name":"Corrently - GrünstromIndex",
-  "icons":[{"src":"/assets/img/Logos/GSI/Logo%20GSI_256.png","type":"image/png","sizes":"256x96"},{"src":"/assets/img/Logos/GSI/Logo%20GSI_512.png","type":"image/png","sizes":"512x192"}],
+  "icons":[{"src":"/assets/img/fav256x256.png",
+    "type":"image/png","sizes":"256x256"}],
   "start_url":"/index.html",
   "display":"fullscreen",
   "scope": "/",
