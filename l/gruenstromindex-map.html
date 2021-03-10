@@ -14,10 +14,10 @@
     <meta name="description" content="Prognose der regionalen Ökostromherkunft für die kommenden Stunden">
     <meta name="twitter:image" content="https://gsi.corrently.de/assets/img/Logos/GSI/Logo GSI_512.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/Logos/Corrently/Favicon_C_16.png">
-    <link rel="icon" type="image/png" sizes="256x96" href="../assets/img/Logos/GSI/Logo%20GSI_256.png">
-    <link rel="icon" type="image/png" sizes="512x192" href="../assets/img/Logos/GSI/Logo%20GSI_512.png">
-    <link rel="icon" type="image/png" sizes="256x96" href="../assets/img/Logos/GSI/Logo%20GSI_256.png">
-    <link rel="icon" type="image/png" sizes="512x192" href="../assets/img/Logos/GSI/Logo%20GSI_512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/Logos/Corrently/Favicon_C_32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="../assets/img/Logos/Corrently/Favicon_Corrently_wog_180.png">
+    <link rel="icon" type="image/png" sizes="196x196" href="../assets/img/Logos/Corrently/Favicon_Corrently_wog_196.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../assets/img/Logos/GSI/Logo%20GSI_512x512.png">
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="manifest" href="../manifest.json">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant">
@@ -30,7 +30,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="../assets/css/styles.min.css">
 <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfRTvKp2wmn6LLn6SYPDqqoV4pCD5Yo7E&callback=initMap&libraries=visualization"></script>
-<script src="https://js.stripe.com/v3/"></script>
+<script src="https://js.stripe.com/v3/"></script><script>
+if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker-pwa.js');
+    }
+</script>
 </head>
 
 <body id="mregister" style="background-color: rgb(9,94,44);box-shadow: 0px 0px var(--dark);">

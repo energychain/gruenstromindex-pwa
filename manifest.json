@@ -1,10 +1,1 @@
-{
-  "short_name":"GrünstromIndex",
-  "name":"Corrently - GrünstromIndex",
-  "icons":[{"src":"/assets/img/fav256x256.png",
-    "type":"image/png","sizes":"256x256"}],
-  "start_url":"/index.html",
-  "display":"fullscreen",
-  "scope": "/",
-  "orientation":"portrait"
-}
+{"short_name":"GrünstromIndex","name":"Corrently - GrünstromIndex","icons":[{"src":"/assets/img/Logos/Corrently/Favicon_Corrently_wog_196.png","type":"image/png","sizes":"196x196"},{"src":"/assets/img/Logos/GSI/Logo%20GSI_512x512.png","type":"image/png","sizes":"512x512"}],"start_url":"/index.html","display":"fullscreen","orientation":"portrait"}

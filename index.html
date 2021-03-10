@@ -14,10 +14,10 @@
     <meta name="description" content="Prognose der regionalen Ökostromherkunft für die kommenden Stunden">
     <meta name="twitter:image" content="https://gsi.corrently.de/assets/img/Logos/GSI/Logo GSI_512.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/Logos/Corrently/Favicon_C_16.png">
-    <link rel="icon" type="image/png" sizes="256x96" href="assets/img/Logos/GSI/Logo%20GSI_256.png">
-    <link rel="icon" type="image/png" sizes="512x192" href="assets/img/Logos/GSI/Logo%20GSI_512.png">
-    <link rel="icon" type="image/png" sizes="256x96" href="assets/img/Logos/GSI/Logo%20GSI_256.png">
-    <link rel="icon" type="image/png" sizes="512x192" href="assets/img/Logos/GSI/Logo%20GSI_512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/Logos/Corrently/Favicon_C_32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/Logos/Corrently/Favicon_Corrently_wog_180.png">
+    <link rel="icon" type="image/png" sizes="196x196" href="assets/img/Logos/Corrently/Favicon_Corrently_wog_196.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/Logos/GSI/Logo%20GSI_512x512.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant">
@@ -29,20 +29,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-    <script>
-      window.OneSignal = window.OneSignal || [];
-      OneSignal.push(function() {
-        OneSignal.init({
-          appId: "71da8209-a1cb-4d3f-a4da-3e8ec25a35b0",
-          safari_web_id: "web.onesignal.auto.235723f6-f2ef-49f2-bb5e-e966332d4e54"
-        });
-      });
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('service-worker-pwa.js');
-    }
-    </script>
 <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfRTvKp2wmn6LLn6SYPDqqoV4pCD5Yo7E&callback=initMap&libraries=visualization"></script>
+<script src="https://js.stripe.com/v3/"></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -64,10 +52,29 @@
     "item": "https://corrently.de/l/gruenstromindex.html"
   }]
 }
+</script><script>
+if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker-pwa.js');
+    }
 </script>
 </head>
 
 <body id="mregister" style="background-color: rgb(9,94,44);box-shadow: 0px 0px var(--dark);">
+    <nav class="navbar navbar-light navbar-expand-md shadow-lg d-print-none d-sm-none d-md-none d-lg-block d-xl-block navigation-clean-button" style="background-color: #ffffff;z-index:2;">
+        <div class="container-fluid"><a class="navbar-brand" href="#"></a><a href="https://corrently.de/home.html"><img id="logo" src="assets/img/Logos/Corrently/Favicon_Corrently_1000.png" style="width: 150px;text-align: left;margin: 0px;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav mr-auto" id="Nav-isolated">
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" id="oekostrom" href="https://corrently.de/oekostrom/privat.html" style="font-family: 'DIN Alternate Bold';">Ökostrom&nbsp;</a>
+                        <div class="dropdown-menu" style="font-size: 14px;"><a class="dropdown-item" href="https://corrently.de/oekostrom/privat.html" style="font-family: 'DIN Alternate Bold';">Privatkunden</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item" href="https://corrently.de/oekostrom/gewerbe.html" style="font-family: 'DIN Alternate Bold';">Gewerbekunden</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item" href="https://corrently.de/oekostrom/auto.html" style="font-family: 'DIN Alternate Bold';">Autostrom</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item" href="https://corrently.de/oekostrom/waerme.html" style="font-size: 14px;font-family: 'DIN Alternate Bold';">Wärmestrom</a>
+                        </div>
+                    </li>
+                </ul><span class="navbar-text actions"> <a class="btn btn-light action-button" role="button" id="kontakt" href="../kontakt.html" style="font-family: 'DIN Alternate Bold';background-color: rgb(253,168,37);">Kontakt</a></span>
+            </div>
+        </div>
+    </nav>
     <div class="d-sm-none d-md-none d-lg-block d-xl-block" style="/*min-height: 10%;*/width: 100%;height: 35px;background: #2b834a;"></div>
     <div class="container" style="background: rgb(9,94,44);">
         <div class="row" style="margin-right: -20px;margin-left: -20px;margin-bottom: 20px;border: 3px solid rgb(9,94,44);min-height: 60px;box-shadow: 5px 5px var(--dark);">
@@ -190,7 +197,7 @@
         </div>
         <footer>
             <p class="copyright"><strong>STROM</strong>DAO&nbsp;GmbH © 2021</p>
-        </footer>
+        </footer><script src="https://www.dwin1.com/22541.js" type="text/javascript" defer="defer"></script>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
