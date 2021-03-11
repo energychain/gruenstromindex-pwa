@@ -1,0 +1,5 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "de.corrently.gsi",
+               "sha256_cert_fingerprints": ["C9:02:E8:BF:CE:52:F9:CB:D8:3C:FB:CC:C1:AF:C6:B9:55:ED:A5:96:D0:1B:41:72:0E:63:CE:82:22:D9:51:56"] }
+}]
