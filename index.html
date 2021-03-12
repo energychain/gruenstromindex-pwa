@@ -8,11 +8,11 @@
     <meta property="og:title" content="Corrently GrünstromIndex">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary">
-    <meta property="og:image" content="https://gsi.corrently.de/assets/img/Logos/GSI/Logo GSI_512.png">
+    <meta property="og:image" content="assets/img/Logos/GSI/Logo%20GSI_512.png">
     <meta name="twitter:description" content="Kunden Stromkonto">
     <meta name="twitter:title" content="Stromkonto">
     <meta name="description" content="Prognose der regionalen Ökostromherkunft für die kommenden Stunden">
-    <meta name="twitter:image" content="https://gsi.corrently.de/assets/img/Logos/GSI/Logo GSI_512.png">
+    <meta name="twitter:image" content="assets/img/Logos/GSI/Logo%20GSI_512.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/Logos/Corrently/Favicon_C_16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/Logos/Corrently/Favicon_C_32.png">
     <link rel="icon" type="image/png" sizes="180x180" href="assets/img/Logos/Corrently/Favicon_Corrently_wog_180.png">
@@ -22,13 +22,16 @@
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="assets/css/caviar_dreamsregular.css">
+    <link rel="stylesheet" href="assets/css/DIN%20Alternate%20Bold.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/css/Popup-Modal-with-Cookie.css">
+    <link rel="stylesheet" href="assets/css/sum.css">
 <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfRTvKp2wmn6LLn6SYPDqqoV4pCD5Yo7E&callback=initMap&libraries=visualization"></script>
 <script src="https://js.stripe.com/v3/"></script>
 <script type="application/ld+json">
@@ -102,7 +105,7 @@ if ('serviceWorker' in navigator) {
                 </form>
             </div>
             <div class="gsiloaded">
-                <h3>Prognose&nbsp;<span id="fortext">-</span>&nbsp;</h3>
+                <h3><a id="relocate" href="#" title="Ort neu wählen"><i class="fa fa-crosshairs"></i></a>Prognose&nbsp;<span id="fortext">-</span>&nbsp;</h3>
                 <div id="gsichart" noco2standard="true" nomodal="true" style="min-height: 260px;margin-bottom: 25px;" noinfo="true" doidx="true"></div>
                 <div id="map" style="min-height: 400px;"></div>
                 <p class="text-muted" style="text-align: center;"><i class="fa fa-map-signs"></i>&nbsp;Darstellung der "Hot-Spots" Deiner regionalen Ökostromerzeugung. Je roter, desto höher die aktuelle Erzeugung.<br></p>
@@ -111,6 +114,22 @@ if ('serviceWorker' in navigator) {
                 </div><button class="btn btn-primary btn-sm modbut" type="button" style="background: #fda824;margin-top: 25px;"><i class="fa fa-code"></i>&nbsp;OpenAPI</button>
             </div>
         </section>
+        <div class="row" style="margin-right: -20px;margin-left: -20px;margin-bottom: 20px;border: 3px solid rgb(9,94,44);min-height: 60px;box-shadow: 5px 5px var(--dark);">
+            <div class="col" style="background: #fda824;min-width: 250px;min-height: 60px;padding-top: 0px;">
+                <h2 style="color: rgb(255,255,255);padding: 15px;">Corrently Ökostrom</h2>
+                <h4 style="color: rgb(255,255,255);padding: 15px;">mit GrünstromIndex unterstützung</h4>
+            </div>
+            <div class="col" style="background: #ffffff;border-style: none;border-color: rgb(9,94,44);border-radius: 10;">
+                <h1 style="padding: 30px;font-size: 24px;padding-bottom: 0px;padding-top: 10px;">100% klimaneutral bis zur Steckdose</h1>
+                <p class="text-muted" style="padding-left: 30px;font-family: Assistant, sans-serif;border-radius: 29px;">Jetzt zu grün werden in einem&nbsp;&nbsp;<span style="font-family: caviar_dreamsregular;">Corrently</span>&nbsp; Tarif</p>
+                <ul>
+                    <li><a href="https://corrently.de/l/tarifrechner-tz.html">Privat (Haushalt/Eigenheim)</a></li>
+                    <li><a href="https://corrently.de/oekostrom/waerme.html">Wärmestrom (Wärmepumpe/Nachtspeicher)</a></li>
+                    <li><a href="https://corrently.de/oekostrom/gewerbe.html">Gewerbestrom</a></li>
+                    <li><a href="https://corrently.de/oekostrom/auto.html">Auto/Ladestrom (Wallbox)</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
     <div class="modal fade" role="dialog" tabindex="-1" id="apiinfo">
         <div class="modal-dialog" role="document">
@@ -201,10 +220,17 @@ if ('serviceWorker' in navigator) {
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="assets/js/script.min.js"></script>
-    <script src="assets/js/index.min.js"></script>
-    <script src="assets/js/stromkonto.min.js"></script>
+    <script src="assets/js/ajaxForm.js"></script>
+    <script src="assets/js/getURLVars.js"></script>
+    <script src="assets/js/correntlyElements-min.js"></script>
+    <script src="assets/js/lightbox.min.js"></script>
+    <script src="assets/js/Corrently-Tarifrechner-Privat.js"></script>
+    <script src="assets/js/Faq-by-pomdre.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/Chart.bundle.min.js"></script>
+    <script src="assets/js/stromkonto.js"></script>
 </body>
 
 </html>

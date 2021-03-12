@@ -1,6 +1,12 @@
 $('.helptxt').click(function() {
     $('.helptxt').toggle();
 })
+$('#relocate').click(function() {
+     window.localStorage.removeItem("q");
+    $('.gsiloaded').hide();
+    $('.gsinozip').hide();
+    $('.gsinozip').show();
+});
 window.gsimap = function(q) {
     $('.gsiloaded').hide();
     $('.gsinozip').hide();
@@ -19,11 +25,15 @@ window.gsimap = function(q) {
         } else
         if(typeof $.getUrlVar("zipcode") !== 'undefined') {
             window.gsimap($.getUrlVar("zipcode"));
+        } else
+        if(window.localStorage.getItem("q")!== null) {
+            window.gsimap(window.localStorage.getItem("q"));        
         } else {
             $('.gsinozip').show();
         }
     } else {
         $('.gsinozip').hide();
+        window.localStorage.setItem("q",q);
         $('#gsichart').correntlyGSI(q);
         $('#hknchart').correntlyHKNChart(q);
         $('#apiurls').append('Dispatch/Stromherkunft: <br/><pre>'+"https://api.corrently.io/v2.0/gsi/dispatch?zip="+q+'</pre>');     
